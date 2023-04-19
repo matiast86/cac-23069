@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+    <style>
+        #toppings {
+           vertical-align: text-top; 
+        }
+    </style>
+    </head>
+<body>
+    <section>
+        <audio controls>
+        <source src="./MP3/Pizza song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio>
+    </section>
+    <header>
+        <h1>Una Pizza para Deleitarse</h1>
+    </header>
+    <main>
+        <h2>La receta para la pizza más rica</h2>
+        <section>
+            <h3>Receta</h3>
+            <!--tablas en html-->  
+            <table border="1" width="100%">
+                <thead>
+                    <tr>
+                        <th>
+                            Ingredientes
+                        </th>
+                        <th>
+                            Procedimiento
+                        </th>
+                        <th>
+                            Toppings
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr align="left">
+                        <td id="toppings" align="left">
+                            <ul>
+                                <li>
+                                    1kg harina 000
+                                </li>
+                                <li>
+                                    50gr de levadura fresca
+                                </li>
+                                <li>
+                                    1 cucharada de sal fina
+                                </li>
+                                <li>
+                                    1 cucharadita de azucar
+                                </li>
+                                <li>
+                                    1 lata de tomate en cubos (o tomate triturado)
+                                </li>
+                                <li>
+                                    8 cucharadas de aceite
+                                </li>
+                                <li>
+                                    Condimentos a gusto
+                                </li>
+                                <li>
+                                    500ml de agua (aprox)
+                                </li>
+                            </ul>
+                        </td>
+                        <td align="center">
+                            <h3>Para la masa</h3>
+                            <ol>
+                                <li>
+                                    En un tachito con un poquitito de agua natural, poner la levadura con la azucar hasta que fermente.
+                                </li>
+                                <li>
+                                    Poner la harina en un bol y agregar la sal con el aceite.
+                                </li>
+                                <li>
+                                    Agregar la levadura y mezclar un poco.
+                                </li>
+                                <li>
+                                    Ir agregando el agua DE A POCO e ir mezclando hasta que se forme una masa lisa y seca.
+                                </li>
+                                <li>
+                                    Envolver la masa con un papel film y dejar levar por al menos 30 min.
+                                </li>
+                                <li>
+                                    Dividir la masa en distintos bollos según el tamaño de la pizza deseada y dejar levar 15 min más.
+                                </li>
+                                <li>
+                                    Estirar la masa en la asadera, agregarle la salsa y poner al horno precalendo al máximo por 10 min. aprox.
+                                </li>
+                            </ol>
+                            <h3>Para la salsa</h3>
+                            <ol>
+                                <li>
+                                    Poner en un bol la salsa de tomate.
+                                </li>
+                                <li>
+                                    Agregarle un chorro de aceite, sal y condimentos a gusto.
+                                </li>
+                                <li>
+                                    Mezclarla bien.
+                                </li>
+                            </ol>
+                        </td>
+                        <td id="toppings" align="left">
+                            <ul>
+                                <h3>Diferentes toppings para agregarle a la pizza</h3>
+                                <li>
+                                    Mozzarela
+                                </li>
+                                <li>
+                                    Palmitos
+                                </li>
+                                <li>
+                                    Anchoas
+                                </li>
+                                <li>
+                                    Ananá
+                                </li>
+                                <li>
+                                    Peperoni
+                                </li>
+                                <li>
+                                    Jamón y morrones
+                                </li>
+                                <li>
+                                    Jamón y huevo
+                                </li>
+                                <li>
+                                    Rúcula y Parmesano
+                                </li>
+                                <li>
+                                    Roquefort
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" align="center">
+                            <b>Useful TIP: Para la masa, poner el <i>aceite en el agua</i> e ir agregandola a la masa de a poco.</b>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <aside>
+            <div>
+                <h5>Ésta receta está auspiciada por:</h5>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="https://www.paulinacocina.net/">Paulina Cocina</a>
+                        </li>
+                    </ul>
+                <img width="15%" 
+                    src="./img/Chef.jpg"/>
+        </aside>
+        <!--al final del documento, en general, va el footer -->
+        <footer>
+            <p>Dejanos tu comentario y contanos que tal te salió la pizza.</p>
+            <form>
+                <label>Comentario:</label>
+                <br>
+                <textarea cols="30" rows="5"></textarea><br>
+                <label>Email:</label><br>
+                <input type="text">
+                <br>
+                <button>
+                    Enviar
+                </button>
+            </form>
+            <section>
+                <fieldset>
+                    <legend>
+                        <h1>Que te pareció la receta</h1>
+                    </legend>
+                    <form action="/action_page.php">
+                        <div>
+                            <label for="cal">Calificá nuestra receta:</label>
+                            <input type="range" id="cal" name="cal" min="0" max="10">
+                            <input type="submit">
+                        </div>
+                      </form>
+                </fieldset>
+            </section>
+        </footer>
+
+</body>
+</html>

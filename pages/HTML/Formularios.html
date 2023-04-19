@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <main>
+        <section>
+            <fieldset>
+                <legend>
+                    <h1>Formularios</h1>
+                </legend>
+                <form method="post" 
+                    enctype="multipart/form-data"
+                    action="./htmls-semantico.html">
+                    <div>
+                        <label for="nombre">Nombre *:</label>
+                        <input name="nombre"
+                            id="nombre"
+                            type="text"
+                            maxlength="50"
+                            required
+                            />
+                    </div>
+                    <div>
+                        <label for="apellido">Apellido *:</label>
+                        <input name="apellido"
+                            id="apellido"
+                            type="text"
+                            maxlength="50"
+                            required
+                            />
+                    </div>
+                    <div>
+                        <div>
+                            <label>Fecha Nac.:</label>
+                            <input type="date">
+                        </div>     
+                    </div>
+                    <div>
+                        <label>Comisión *:</label>
+                        <input type="number"
+                            name="comision"
+                            id="comisión"
+                            required>
+                    </div>
+                    <div>
+                        <label for="nacionalidad">Nacionalidad:</label>
+                        <select name="nac">
+                            <optition></optition>
+                            <option value="AR">Arg.</option>
+                            <option value="BRA">Bra.</option>
+                            <option value="CHI">Chil.</option>
+                        </select>
+                    </div>
+                    <div>
+                    <div>
+                        <label for="">Habla inglés?</label>
+                        <input type="radio"
+                            name="HablaIngles"
+                            value="SI">
+                            SI
+                        <input type="radio" 
+                            name="HablaIngles"
+                            value="NO">
+                            NO
+                    </div>
+                    <div>
+                        <label for="">Intereses</label>
+                        <div>
+                        <input type="checkbox"
+                            name="Intereses"
+                            value="football">
+                            Football
+                        <input type="checkbox" 
+                            name="Intereses"
+                            value="Música">
+                            Música
+                        <input type="checkbox" 
+                        name="Intereses"
+                        value="Programación">
+                        Programación
+                        </div>
+                    </div>
+                    <div>
+                        <label for="favcolor">Color favorito:</label>
+                    </div>
+                        <div>
+                            <input type="color"
+                                id="favcolor"
+                                name="favcolor"
+                                value="#ff0000">
+                            <input type="submit">
+                        </div>
+                    <div>
+                        <label>Avatar:</label>
+                        <div>
+                            <input type="file" name="Avatar">
+                        </div>
+                    </div>
+                        <button>
+                            Enviar
+                        </button>
+                    </div>                
+                </form>
+            </fieldset>
+        </section>
+        <section>
+            <fieldset>
+                <legend>
+                    <h1>Otros tags</h1>
+                </legend>
+                <form>
+                    <input name="claveunica"
+                        type="hidden"
+                        value="123456"
+                        id="claveunica">
+                    <div>
+                        <label for="search">Buscar:</label>
+                        <input name="search"
+                            id="search"
+                            type="search">
+                            <button>
+                                Buscar
+                            </button>
+                    </div>
+                </form>
+            </fieldset>
+        </section>
+        <section>
+            <fieldset>
+                <legend>
+                    <h1>Login</h1>
+                </legend>
+                <form action="/action_page.php">
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email"><br><br>
+                        <label for="pwd">Password:</label>
+                        <input type="password" id="pwd" name="pwd" minlength="8"><br><br>
+                        <input type="submit">
+                    </div>
+                  </form>
+            </fieldset>
+        </section>
+        <section>
+            <fieldset>
+                <legend>
+                    <h1>Feedback</h1>
+                </legend>
+                <form action="/action_page.php">
+                    <div>
+                        <label for="cal">Calificá nuestra página:</label>
+                        <input type="range" id="cal" name="cal" min="0" max="10">
+                        <input type="submit">
+                    </div>
+                  </form>
+            </fieldset>
+        </section>
+    </main>
+</body>
+</html>
